@@ -4,7 +4,7 @@ class CfgPatches
     {
         name = "Astrid's Advanced Aids";
         author = "LynxAustralis";
-        url = "https://discord.com/invite/gaayXtRkgq";
+        url = "https://github.com/DevotedLynx/AstridsAdvancedAids/wiki";
         units[] = 
         {
         };
