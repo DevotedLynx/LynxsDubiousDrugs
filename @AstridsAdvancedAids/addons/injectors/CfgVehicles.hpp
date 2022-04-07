@@ -5,6 +5,6 @@ class cfgVehicles
     class AAA_adrenalineItem: ACE_morphineItem
     {
         displayname="adrenaline";
-        author="LynxAustralis"
+        author="LynxAustralis";
     };
 };

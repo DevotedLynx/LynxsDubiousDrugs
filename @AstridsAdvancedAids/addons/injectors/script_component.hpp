@@ -1,3 +1,3 @@
-#define PREFIX AAA
-#define COMPONENT Injectors
-#include "\x\cba\addons\main\script_macros_common.hpp"
+#define COMPONENT injectors
+#include "\x\astrid\addons\main\script_mod.hpp"
+#include "\x\ace\addons\medical_engine\script_macros_medical.hpp"

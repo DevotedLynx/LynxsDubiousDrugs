@@ -8,6 +8,6 @@ class cfgWeapons
         author="LynxAustralis";
 		displayName="adrenaline";
         descriptionShort="An Adrenaline Auto Injector providing temperary stanima and speed";
-        callbackSuccess= QUOTE(FUNC(adrenaline));
+        callbackSuccess= QFUNC(adrenaline);
     };
 };
