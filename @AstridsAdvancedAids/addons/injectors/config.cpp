@@ -1,12 +1,15 @@
+#include "script_component.hpp"
+
 class cfgPatches
 {
-    class AstridsAdvancedAids_Injectors
+    class ADDON
     {
         addonRootClass = "AstridsAdvancedAids";
         requiredAddons[] = 
             {
                 "ace_medical_engine",
-                "ace_medical_treatment"
+                "ace_medical_treatment",
+                "cba_xeh"
             };
         units[] = 
             {
@@ -36,26 +39,23 @@ class ace_medical_treatment_actions
     };
 };
 
-class cfgWeapons
+class ace_medical_treatment
 {
-    class ItemCore;
-	class ACE_ItemCore;
-    class ACE_morphine;
-    class AAA_adrenaline: ACE_morphine
+    class Medication
     {
-        author="LynxAustralis";
-		displayName="adrenaline";
-        descriptionShort="An Adrenaline Auto Injector providing temperary stanima and speed";
+        class Adrenaline
+        {
+            painReduce=0;
+		    hrIncreaseLow[]={0,0};
+		    hrIncreaseNormal[]={0,0};
+		    hrIncreaseHigh[]={0,0};
+		    timeInSystem=300;
+		    timeTillMaxEffect=5;
+		    maxDose=3;
+		    onOverDose="";
+		    viscosityChange=0;
+        };
     };
 };
 
-class cfgVehicles
-{
-    class Item_Base_F;
-    class ACE_morphineItem;
-    class AAA_adrenalineItem: ACE_morphineItem
-    {
-        displayname="adrenaline";
-        author="LynxAustralis"
-    };
-};
+#include "CfgEventhandlers.hpp"
