@@ -1,15 +1,12 @@
 class Extended_PreInit_EventHandlers {
     class ADDON {
         init = QUOTE(call COMPILE_FILE(XEH_preInit));
-        disableModuload = true;
     };
 };
 
 class Extended_Prestart_EventHandlers {
-    class CAManBase {
-        class ADDON {
+    class ADDON {
             init = QUOTE(_this call COMPILE_FILE(prestart));
-        };
     };
 };
 
