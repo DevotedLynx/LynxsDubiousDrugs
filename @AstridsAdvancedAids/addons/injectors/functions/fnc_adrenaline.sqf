@@ -1,4 +1,4 @@
-#include "\x\addons\injectors\script_component.hpp"
+#include "script_component.hpp"
 /*
 *
 * handles localisation

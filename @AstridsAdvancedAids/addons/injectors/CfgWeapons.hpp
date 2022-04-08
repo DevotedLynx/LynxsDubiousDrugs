@@ -1,9 +1,8 @@
 class cfgWeapons
 {
-    class ItemCore;
 	class ACE_ItemCore;
     class ACE_morphine;
-    class AAA_adrenaline: ACE_morphine
+    class astrid_adrenaline: ACE_morphine
     {
         author="LynxAustralis";
 		displayName="adrenaline";
