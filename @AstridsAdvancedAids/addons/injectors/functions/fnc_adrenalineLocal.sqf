@@ -12,7 +12,6 @@ Arguments:
 
 
 */ 
-hint "hello world";
 params ["_medic", "_patient", "_bodyPart","_classname"];
 
 [_patient, "Adrenaline"] call ace_medical_treatment_fnc_addToTriageCard;
@@ -21,13 +20,9 @@ params ["_medic", "_patient", "_bodyPart","_classname"];
 
 private _deInhibiter = 0;
 ace_advanced_fatigue_setAnimExclusions  pushBack _deInhibiter;
-private _animCoEf = (getAnimSpeedCoef _patient);
-sleep 5;
-if(ace_advanced_fatigue_setAnimExclusions != []) then {
-	_animCoEf + 0.5;
-	_patient setAnimSpeedCoef _animCoEf;
-	hint "speed applied";
-};
+_count = [_patient, "Adrenaline"] call ace_medical_status_fnc_getMedicationCount;
+_Increase = (getAnimSpeedCoef _patient)+(_count/2);
+_patient setAnimSpeedCoef _increase;	
 
 [
 	{
