@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "\x\astrid\addons\injectors\script_component.hpp"
 /*
 *
 * handles localisation
@@ -14,16 +14,13 @@
 *
 */
 
-params ["_medic", "_patient", "bodyPart", "_treatment"];
-
-if(_treatment != "Adrenaline") exitwith {
+params ["_medic", "_patient", "_bodyPart", "_classname","","_usedItem"];
+if(_classname != "Adrenaline") exitwith {
 	hint "Error: function reserved for Adrenaline"
 };
 
 if (local _patient) then {
-    ["adrenalineTreatment", [_medic, _patient, _bodyPart, _treatment]] call CBA_fnc_localEvent;
+    [QGVAR(adrenalineTreatment), [_medic, _patient, _classname]] call CBA_fnc_localEvent;
 } else {
-    ["adrenalineTreatment", [_medic, _patient, _bodyPart, _treatment], _patient] call CBA_fnc_targetEvent;
+    [QGVAR(adrenalineTreatment), [_medic, _patient, _classname], _patient] call CBA_fnc_targetEvent;
 };
-
-true;

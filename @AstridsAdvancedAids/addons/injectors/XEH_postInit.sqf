@@ -1,3 +1,3 @@
 #include "script_component.hpp"
 
-["adrenalineTreatment", {_this call FUNC(adrenaline_local)}] call CBA_fnc_addEventHandeler;
+[QGVAR(adrenalineTreatment), {_this call FUNC(adrenalineLocal)}] call CBA_fnc_addEventHandler;

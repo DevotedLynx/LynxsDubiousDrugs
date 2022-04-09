@@ -1,17 +1,17 @@
 class Extended_PreStart_EventHandlers {
     class ADDON {
-        init = "call compile preprocessFileLineNumbers 'XEH_preStart.sqf'";
+        init = QUOTE(call COMPILE_SCRIPT(XEH_preStart));
     };
 };
 
 class Extended_PreInit_EventHandlers {
     class ADDON {
-        init = "call compile preprocessFileLineNumbers 'XEH_preInit.sqf'";
+        init = QUOTE(call COMPILE_SCRIPT(XEH_preInit));
     };
 };
 
 class Extended_PostInit_EventHandlers {
     class ADDON {
-        init = "call compile preprocessFileLineNumbers 'XEH_postInit.sqf'";
+        init = QUOTE(call COMPILE_SCRIPT(XEH_postInit));
     };
 };

@@ -4,10 +4,11 @@ class ACE_Medical_Treatment_Actions {
 	class Morphine;
 	class Adrenaline: Morphine 
 	{
-		displayName = "Adrenaline";
+		displayName = "Inject Adrenaline";
         displayNameProgress = "Injecting Adrenaline";
         medicRequired = false;
-		callbackSuccess = "[_medic, _patient, _bodyPart, _treatment] call astrid_injectors_adrenaline;";
+		condition = "ace_medical_treatment_advancedMedication";
+		callbackSuccess = QFUNC(adrenaline);
         items[] = {"astrid_adrenaline"};
 	};
 };
