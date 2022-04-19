@@ -4,13 +4,13 @@
 [QGVAR(adrenalinePropergation), {_this call FUNC(adrenalinePropergation)}] call CBA_fnc_addEventHandler;
 
 ["ace_common_setAnimSpeedCoef", {
-    params ["_patient", "_value"];
+    params ["_unit", "_value"];
     if (_value == 1) then {
-        private _count = {(_x select 0) == "adrenaline"} count (_patient getVariable ["ace_medical_medications", []]);
-		private _Increase = 1+(_count/2);
-		_patient setAnimSpeedCoef _increase
+    private _speed = _patient getVariable ["astrid_Speed",0];
+	_unit setAnimSpeedCoef _speed+1
     }
 }] call CBA_fnc_addEventHandler;
+
 ["Astrid_Adrenaline",{
 	params ["_patient"];
 	private _count = {(_x select 0) == "adrenaline"} count (_patient getVariable ["ace_medical_medications", []]);
