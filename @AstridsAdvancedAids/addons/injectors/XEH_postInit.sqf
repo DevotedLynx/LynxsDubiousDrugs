@@ -11,3 +11,9 @@
 		_patient setAnimSpeedCoef _increase
     }
 }] call CBA_fnc_addEventHandler;
+["Astrid_Adrenaline",{
+	params ["_patient"];
+	private _count = {(_x select 0) == "adrenaline"} count (_patient getVariable ["ace_medical_medications", []]);
+	if (_count > 0) exitwith {0.5};
+	1
+}] call ace_advanced_fatigue_fnc_addDutyFactor
