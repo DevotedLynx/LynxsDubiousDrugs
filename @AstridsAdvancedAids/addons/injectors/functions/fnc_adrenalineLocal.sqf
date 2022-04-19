@@ -12,18 +12,27 @@ Arguments:
 
 
 */ 
-params ["_medic", "_patient", "_bodyPart","_classname"];
+params ["_medic", "_patient","_classname"];
 
 private _deInhibiter = [_patient,_classname];
 ace_advanced_fatigue_setAnimExclusions  pushBack _deInhibiter;
-["ace_common_setAnimSpeedCoef", [_patient,1]] call CBA_fnc_globalEvent;
 
+private _speed = _patient getVariable ["astrid_Speed", 0];
+_speed = _speed + 0.5;
+_patient setVariable ["astrid_Speed", _speed, true];
+
+["ace_common_setAnimSpeedCoef", [_patient,1]] call CBA_fnc_globalEvent;
 [
 	{
+		params ["_patient"];
+		private _speed = _patient getVariable ["astrid_Speed", 0];
+		_speed = _speed - 0.5;
+		_patient setVariable ["astrid_Speed", _speed, true];
+		["ace_common_setAnimSpeedCoef", [_patient,1]] call CBA_fnc_globalEvent;
 		ace_advanced_fatigue_setAnimExclusions deleteAt (ace_advanced_fatigue_setAnimExclusions find _this)
 	},
 	[
-		_patient, _classname
+		_patient,_classname
 	],
 	180
 ] call CBA_fnc_waitAndExecute;
