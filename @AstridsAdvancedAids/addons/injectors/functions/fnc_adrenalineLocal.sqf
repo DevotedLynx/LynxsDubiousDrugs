@@ -25,5 +25,5 @@ ace_advanced_fatigue_setAnimExclusions  pushBack _deInhibiter;
 	[
 		_patient, _classname
 	],
-	300
+	180
 ] call CBA_fnc_waitAndExecute;
