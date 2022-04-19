@@ -20,8 +20,8 @@ params ["_medic", "_patient", "_bodyPart","_classname"];
 
 private _deInhibiter = 0;
 ace_advanced_fatigue_setAnimExclusions  pushBack _deInhibiter;
-_count = [_patient, "Adrenaline"] call ace_medical_status_fnc_getMedicationCount;
-_Increase = (getAnimSpeedCoef _patient)+(_count/2);
+private _count = {(_x select 0) == "adrenaline"} count (_patient getVariable ["ace_medical_medications", []]);
+private _Increase = (getAnimSpeedCoef _patient)+(_count/2);
 _patient setAnimSpeedCoef _increase;	
 
 [
