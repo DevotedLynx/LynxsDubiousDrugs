@@ -2,4 +2,3 @@
 
 #include "XEH_PREP.sqf"
 
-ADDON = true;
