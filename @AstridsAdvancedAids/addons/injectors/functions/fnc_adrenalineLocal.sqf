@@ -18,7 +18,7 @@ private _deInhibiter = [_patient,_classname];
 ace_advanced_fatigue_setAnimExclusions  pushBack _deInhibiter;
 
 private _speed = _patient getVariable ["astrid_Speed", 0];
-_speed = _speed + 0.5;
+_speed = _speed + 0.25;
 _patient setVariable ["astrid_Speed", _speed, true];
 
 ["ace_common_setAnimSpeedCoef", [_patient,1]] call CBA_fnc_globalEvent;
@@ -26,7 +26,7 @@ _patient setVariable ["astrid_Speed", _speed, true];
 	{
 		params ["_patient"];
 		private _speed = _patient getVariable ["astrid_Speed", 0];
-		_speed = _speed - 0.5;
+		_speed = _speed - 0.25;
 		_patient setVariable ["astrid_Speed", _speed, true];
 		["ace_common_setAnimSpeedCoef", [_patient,1]] call CBA_fnc_globalEvent;
 		ace_advanced_fatigue_setAnimExclusions deleteAt (ace_advanced_fatigue_setAnimExclusions find _this)
