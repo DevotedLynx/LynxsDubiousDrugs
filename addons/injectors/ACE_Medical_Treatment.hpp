@@ -10,5 +10,15 @@ class ACE_Medical_Treatment {
             maxDose = 3;
             incompatibleMedication[] = {};
 		};
+        class MULE {
+           	painReduce = 0.2;
+            hrIncreaseLow[] = {15, 25};
+            hrIncreaseNormal[] = {20, 35};
+            hrIncreaseHigh[] = {35, 40};
+            timeInSystem = 180;
+            timeTillMaxEffect = 30;
+            maxDose = 3;
+            incompatibleMedication[] = {}; 
+        };
 	};
 };
