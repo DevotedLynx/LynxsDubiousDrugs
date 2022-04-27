@@ -1,2 +1,0 @@
-PREP(adrenaline);
-PREP(adrenalineLocal);
