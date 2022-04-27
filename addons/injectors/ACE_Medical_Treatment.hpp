@@ -10,7 +10,7 @@ class ACE_Medical_Treatment {
             maxDose = 3;
             incompatibleMedication[] = {};
 		};
-        class MULE {
+        class Mule {
            	painReduce = 0.2;
             hrIncreaseLow[] = {15, 25};
             hrIncreaseNormal[] = {20, 35};

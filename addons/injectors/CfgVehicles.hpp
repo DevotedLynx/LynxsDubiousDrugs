@@ -7,9 +7,9 @@ class cfgVehicles
         displayname="adrenaline";
         author="LynxAustralis";
     };
-    class astrid_MULEitem: ACE_morphineItem
+    class astrid_Muleitem: ACE_morphineItem
     {
-        displayname="MULE";
+        displayname="Mule";
         author="LynxAustralis";
     };
 };

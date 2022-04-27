@@ -8,10 +8,10 @@ class cfgWeapons
 		displayName="Adrenaline";
         descriptionShort="An Adrenaline Auto Injector providing temperary stanima and speed";
     };
-    class astrid_MULE: ACE_morphine
+    class astrid_Mule: ACE_morphine
     {
         author="LynxAustralis";
-        displayName="MULE";
+        displayName="Mule";
         descriptionShort="A stimilant to increase your carrying capacity";
-    }
+    };
 };
