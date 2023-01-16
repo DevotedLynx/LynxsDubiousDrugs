@@ -2,14 +2,14 @@ class ACE_Medical_Treatment_Actions {
 	class BasicBandage;
 	class FieldDressing;
 	class Morphine;
-	class Adrenaline: Morphine 
+	class adrenalyn: Morphine 
 	{
-		displayName = "Inject Adrenaline";
-        displayNameProgress = "Injecting Adrenaline";
+		displayName = "Inject adrenalyn";
+        displayNameProgress = "Injecting adrenalyn";
         medicRequired = false;
 		condition = "ace_medical_treatment_advancedMedication";
-		callbackSuccess = QFUNC(adrenaline);
-        items[] = {"astrid_adrenaline"};
+		callbackSuccess = QFUNC(adrenalyn);
+        items[] = {"astrid_adrenalyn"};
 	};
 	class Mule: Morphine
 	{

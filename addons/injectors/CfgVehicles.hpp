@@ -2,9 +2,9 @@ class cfgVehicles
 {
     class Item_Base_F;
     class ACE_morphineItem;
-    class astrid_adrenalineItem: ACE_morphineItem
+    class astrid_adrenalynItem: ACE_morphineItem
     {
-        displayname="adrenaline";
+        displayname="adrenalyn";
         author="LynxAustralis";
     };
     class astrid_Muleitem: ACE_morphineItem

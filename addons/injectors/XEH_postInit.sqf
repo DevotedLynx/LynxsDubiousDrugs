@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-[QGVAR(adrenalineTreatment), {_this call FUNC(adrenalineLocal)}] call CBA_fnc_addEventHandler;
+[QGVAR(adrenalynTreatment), {_this call FUNC(adrenalynLocal)}] call CBA_fnc_addEventHandler;
 [QGVAR(MuleTreatment), {_this call FUNC(MuleLocal)}] call CBA_fnc_addEventHandler;
 
 ["ace_common_setAnimSpeedCoef", {
@@ -11,11 +11,11 @@
     }
 }] call CBA_fnc_addEventHandler;
 
-["Astrid_Adrenaline",
+["Astrid_adrenalyn",
 {
 	params ["_patient"];
-	private _count_adrenaline = {(_x select 0) == "adrenaline"} count (_patient getVariable ["ace_medical_medications", []]);
-	if (_count_adrenaline > 0) exitwith {1-(0.25*_count_adrenaline)};
+	private _count_adrenalyn = {(_x select 0) == "adrenalyn"} count (_patient getVariable ["ace_medical_medications", []]);
+	if (_count_adrenalyn > 0) exitwith {1-(0.25*_count_adrenalyn)};
 	1
 }] call ace_advanced_fatigue_fnc_addDutyFactor;
 
@@ -23,6 +23,6 @@
 {
 	params ["_patient"];
 	private _count_Mule = {(_x select 0) == "Mule"} count (_patient getVariable ["ace_medical_medications", []]);
-	if (_count_Mule > 0) exitwith {1-(0.15*_count_Mule)};
+	if (_count_Mule > 0) exitwith {1-(0.20*_count_Mule)};
 	1
 }] call ace_advanced_fatigue_fnc_addDutyFactor

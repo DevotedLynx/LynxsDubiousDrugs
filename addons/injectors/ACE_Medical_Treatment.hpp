@@ -1,6 +1,6 @@
 class ACE_Medical_Treatment {
 	class Medication {
-		class Adrenaline {
+		class adrenalyn {
 			painReduce = 0;
             hrIncreaseLow[] = {50, 65};
             hrIncreaseNormal[] = {50, 65};

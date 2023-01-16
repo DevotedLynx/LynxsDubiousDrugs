@@ -2,16 +2,16 @@ class cfgWeapons
 {
 	class ACE_ItemCore;
     class ACE_morphine;
-    class astrid_adrenaline: ACE_morphine
+    class astrid_adrenalyn: ACE_morphine
     {
         author="LynxAustralis";
-		displayName="Adrenaline";
-        descriptionShort="An Adrenaline Auto Injector providing temperary stanima and speed";
+		displayName="Adrenalyn";
+        descriptionShort="An adrenalyn Auto Injector providing temperary stanima and speed";
     };
     class astrid_Mule: ACE_morphine
     {
         author="LynxAustralis";
-        displayName="Mule";
+        displayName="M.U.L.E";
         descriptionShort="A stimilant to increase your carrying capacity";
     };
 };
