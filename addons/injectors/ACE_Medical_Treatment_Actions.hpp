@@ -20,4 +20,13 @@ class ACE_Medical_Treatment_Actions {
 		callbackSuccess = QFUNC(Mule);
         items[] = {"astrid_Mule"};	
 	};
+	class StaminAid: Morphine
+	{
+		displayName = "Inject StaminAid";
+        displayNameProgress = "Injecting StaminAid";
+        medicRequired = false;
+		condition = "ace_medical_treatment_advancedMedication";
+		callbackSuccess = QFUNC(StaminAid);
+        items[] = {"astrid_StaminAid"};	
+	};
 };
