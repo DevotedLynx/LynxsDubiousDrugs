@@ -14,4 +14,10 @@ class cfgWeapons
         displayName="M.U.L.E";
         descriptionShort="A stimilant to increase your carrying capacity";
     };
+    class astrid_StaminAid: ACE_morphine
+    {
+        author="LynxAustralis";
+        displayName="StaminAid";
+        descriptionShort="A refreshing cocktail that grants more stamina however the ingredients are scratched off";
+    };
 };

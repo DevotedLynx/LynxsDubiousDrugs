@@ -12,4 +12,9 @@ class cfgVehicles
         displayname="Mule";
         author="LynxAustralis";
     };
+    class astrid_StaminAidItem: ACE_morphineItem
+    {
+        displayName="StaminAid";
+        author="LynxAustralis";
+    };
 };
