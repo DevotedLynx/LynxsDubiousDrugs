@@ -7,12 +7,12 @@
 ["ace_common_setAnimSpeedCoef", {
     params ["_unit", "_value"];
     if (_value == 1) then {
-    private _speed = _patient getVariable ["astrid_Speed",0];
+    private _speed = _patient getVariable ["LDD_Speed",0];
 	_unit setAnimSpeedCoef _speed+1
     }
 }] call CBA_fnc_addEventHandler;
 
-["Astrid_adrenalyn",
+["LDD_adrenalyn",
 {
 	params ["_patient"];
 	private _count_adrenalyn = {(_x select 0) == "adrenalyn"} count (_patient getVariable ["ace_medical_medications", []]);
@@ -20,7 +20,7 @@
 	1
 }] call ace_advanced_fatigue_fnc_addDutyFactor;
 
-["Astrid_Mule",
+["LDD_Mule",
 {
 	params ["_patient"];
 	private _count_Mule = {(_x select 0) == "Mule"} count (_patient getVariable ["ace_medical_medications", []]);

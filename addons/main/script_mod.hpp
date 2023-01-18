@@ -1,2 +1,2 @@
 #define MAINPREFIX x
-#define PREFIX astrid
+#define PREFIX LDD

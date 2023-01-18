@@ -9,7 +9,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = false;
 		condition = "ace_medical_treatment_advancedMedication";
 		callbackSuccess = QFUNC(adrenalyn);
-        items[] = {"astrid_adrenalyn"};
+        items[] = {"LDD_adrenalyn"};
 	};
 	class Mule: Morphine
 	{
@@ -18,7 +18,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = false;
 		condition = "ace_medical_treatment_advancedMedication";
 		callbackSuccess = QFUNC(Mule);
-        items[] = {"astrid_Mule"};	
+        items[] = {"LDD_Mule"};	
 	};
 	class StaminAid: Morphine
 	{
@@ -27,6 +27,6 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = false;
 		condition = "ace_medical_treatment_advancedMedication";
 		callbackSuccess = QFUNC(StaminAid);
-        items[] = {"astrid_StaminAid"};	
+        items[] = {"LDD_StaminAid"};	
 	};
 };

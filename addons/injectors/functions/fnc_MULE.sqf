@@ -1,4 +1,4 @@
-#include "\x\astrid\addons\injectors\script_component.hpp"
+#include "\x\LDD\addons\injectors\script_component.hpp"
 
 
 

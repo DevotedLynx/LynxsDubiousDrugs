@@ -4,7 +4,7 @@ class cfgPatches
 {
     class ADDON
     {
-        addonRootClass = "AstridsAdvancedAids";
+        addonRootClass = "LDDsAdvancedAids";
         requiredAddons[] = 
             {
                 "cba_main",
@@ -14,15 +14,15 @@ class cfgPatches
             };
         units[] = 
             {
-                "astrid_adrenalynitem",
-                "astrid_Muleitem",
-                "astrid_StaminAidItem"
+                "LDD_adrenalynitem",
+                "LDD_Muleitem",
+                "LDD_StaminAidItem"
             };
         weapons[] =
             {
-                "astrid_adrenalyn",
-                "astrid_Mule",
-                "astrid_StaminAid"
+                "LDD_adrenalyn",
+                "LDD_Mule",
+                "LDD_StaminAid"
             };
     };
 };
