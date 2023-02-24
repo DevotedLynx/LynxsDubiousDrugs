@@ -26,4 +26,12 @@
 	private _count_Mule = {(_x select 0) == "Mule"} count (_patient getVariable ["ace_medical_medications", []]);
 	if (_count_Mule > 0) exitwith {1-(0.20*_count_Mule)};
 	1
+}] call ace_advanced_fatigue_fnc_addDutyFactor;
+
+["LDD_adjustACEdutyFactorByMedication",
+{
+	params ["_patient","_medication","_effectModifier"];
+	private _countMedication = {(_x select 0) == _medication} count (_patient getVariable ["ace_medical_medications", []]);
+	if (_countMedication > 0) exitwith {1-(_effectModifier*_countMedication)};
+	1
 }] call ace_advanced_fatigue_fnc_addDutyFactor

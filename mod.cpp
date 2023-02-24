@@ -1,14 +1,14 @@
 name = "Lynx's Dubious Drugs";
 dir = "@LynxsDubiousDrugs";
-picture = "";
+picture = "injectorIcon.paa";
 actionName = "Discord";
 action = "https://discord.com/invite/JxAcEcTVCP";
-logo = "";
+logo = "injectorIcon.paa";
 logoOver = "";
 tooltip = "LDD";
 tooltipOwned = "LDD";
 overview = "a god forsaken mod";
 author = "LynxAustralis";
-overviewPicture = "";
+overviewPicture = "injectorIcon.paa";
 overviewText = "LDD";
 overviewFootnote = "";

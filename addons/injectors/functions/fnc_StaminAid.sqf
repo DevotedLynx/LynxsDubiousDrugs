@@ -21,9 +21,8 @@ if(_classname != "StaminAid") exitwith {
 
 if (local _patient) then {
     [_medic, _patient, _bodyPart, _classname,"",_usedItem] call ace_medical_treatment_fnc_medication;
-    [QGVAR(StaminAidTreatment), [40]] call CBA_fnc_localEvent;
+    [QGVAR(StaminAidTreatment), [_patient,0.4,15]] call CBA_fnc_localEvent;
 } else {
     [_medic, _patient, _bodyPart, _classname,"",_usedItem] call ace_medical_treatment_fnc_medication;
-    [QGVAR(StaminAidTreatment), [40], _patient] call CBA_fnc_targetEvent;
-
+    [QGVAR(StaminAidTreatment), [_patient,0.4,15], _patient] call CBA_fnc_targetEvent;
 };
