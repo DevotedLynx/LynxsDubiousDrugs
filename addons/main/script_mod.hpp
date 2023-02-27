@@ -1,2 +1,3 @@
 #define MAINPREFIX x
-#define PREFIX LDD
+#define PREFIX ldd
+

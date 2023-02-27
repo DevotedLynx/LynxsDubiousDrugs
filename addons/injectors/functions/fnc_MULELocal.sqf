@@ -1,4 +1,4 @@
-#include "\x\LDD\addons\injectors\script_component.hpp"
+#include "\x\ldd\addons\injectors\script_component.hpp"
 /*
 
 0: the caller
@@ -13,11 +13,11 @@ returns nothing
 */
 params ["_medic", "_patient","_classname"];
 
-["LDD_Mule", [_patient,0]] call CBA_fnc_localEvent;
+["ldd_mule", [_patient,0]] call CBA_fnc_localEvent;
 [
 	{
 		params ["_patient"];
-		["LDD_Mule", [_patient,0]] call CBA_fnc_localEvent
+		["ldd_mule", [_patient,0]] call CBA_fnc_localEvent;
 	},
 	[
 		_patient,_classname

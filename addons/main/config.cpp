@@ -1,12 +1,12 @@
-#include "\x\LDD\addons\main\script_component.hpp"
+#include "\x\ldd\addons\main\script_component.hpp"
 
 class CfgPatches
 {
-    class LDD_main
+    class ldd_main
     {
         name = "Lynx's Dubious Drugs";
         author = "LynxAustralis";
-        url = "https://discord.com/invite/JxAcEcTVCP";
+        url = "https://discord.com/invite/JxacecTVCP";
         units[] = 
         {
         };
@@ -24,14 +24,14 @@ class CfgPatches
 };
 class CfgMods
 {
-    class LDD
+    class ldd
     {
         dir="@LynxsDubiousDrugs";
 		name="Lynx's Dubious Drugs";
 		hidePicture="true";
 		hideName="true";
 		actionName="Website";
-		action="https://discord.com/invite/JxAcEcTVCP";
+		action="https://discord.com/invite/JxacecTVCP";
 		description="";
     };
 };

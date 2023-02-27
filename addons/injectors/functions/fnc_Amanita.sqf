@@ -8,16 +8,21 @@
 
 
 
+
+
+
+
+
+
 params ["_medic", "_patient", "_bodyPart", "_classname","","_usedItem"];
-if(_classname != "mule") exitwith {
-	hint "Error: function reserved for mule"
+if(_classname != "Amanita") exitwith {
+	hint "Error: function reserved for Amanita Muscaria"
 };
 
 if (local _patient) then {
     [_medic, _patient, _bodyPart, _classname,"",_usedItem] call ace_medical_treatment_fnc_medication;
-    [QGVAR(muleTreatment), [_medic, _patient, _classname]] call CBA_fnc_localEvent;
+    [QGVAR(AmanitaTreatment), [_patient,5,300]] call CBA_fnc_localEvent;
 } else {
     [_medic, _patient, _bodyPart, _classname,"",_usedItem] call ace_medical_treatment_fnc_medication;
-    [QGVAR(muleTreatment), [_medic, _patient, _classname], _patient] call CBA_fnc_targetEvent;
-
+    [QGVAR(AmanitaTreatment), [_patient,5,300], _patient] call CBA_fnc_targetEvent;
 };

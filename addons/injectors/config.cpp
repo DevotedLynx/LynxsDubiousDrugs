@@ -1,10 +1,10 @@
 #include "script_component.hpp"
 
-class cfgPatches
+class CfgPatches
 {
     class ADDON
     {
-        addonRootClass = "LDDsAdvancedAids";
+        addonRootClass = "ldd_main";
         requiredAddons[] = 
             {
                 "cba_main",
@@ -14,15 +14,17 @@ class cfgPatches
             };
         units[] = 
             {
-                "LDD_adrenalynitem",
-                "LDD_Muleitem",
-                "LDD_StaminAidItem"
+                "ldd_adrenalynitem",
+                "ldd_muleitem",
+                "ldd_StaminAidItem",
+                "ldd_AmanitaItem"
             };
         weapons[] =
             {
-                "LDD_adrenalyn",
-                "LDD_Mule",
-                "LDD_StaminAid"
+                "ldd_adrenalyn",
+                "ldd_mule",
+                "ldd_StaminAid",
+                "ldd_Amanita"
             };
     };
 };
@@ -32,3 +34,4 @@ class cfgPatches
 #include "CfgWeapons.hpp"
 #include "ACE_Medical_Treatment.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
+#include "ACE_Medical_Injuries.hpp"

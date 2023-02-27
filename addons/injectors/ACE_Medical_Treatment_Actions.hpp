@@ -1,6 +1,6 @@
-class ACE_Medical_Treatment_Actions {
+class ace_Medical_Treatment_Actions {
 	class BasicBandage;
-	class FieldDressing;
+	class Fielddressing;
 	class Morphine;
 	class adrenalyn: Morphine 
 	{
@@ -9,16 +9,16 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = false;
 		condition = "ace_medical_treatment_advancedMedication";
 		callbackSuccess = QFUNC(adrenalyn);
-        items[] = {"LDD_adrenalyn"};
+        items[] = {"ldd_adrenalyn"};
 	};
-	class Mule: Morphine
+	class mule: Morphine
 	{
-		displayName = "Inject Mule";
-        displayNameProgress = "Injecting Mule";
+		displayName = "Inject mule";
+        displayNameProgress = "Injecting mule";
         medicRequired = false;
 		condition = "ace_medical_treatment_advancedMedication";
-		callbackSuccess = QFUNC(Mule);
-        items[] = {"LDD_Mule"};	
+		callbackSuccess = QFUNC(mule);
+        items[] = {"ldd_mule"};	
 	};
 	class StaminAid: Morphine
 	{
@@ -27,6 +27,15 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = false;
 		condition = "ace_medical_treatment_advancedMedication";
 		callbackSuccess = QFUNC(StaminAid);
-        items[] = {"LDD_StaminAid"};	
+        items[] = {"ldd_StaminAid"};	
+	};
+	class Amanita: Morphine
+	{
+		displayName = "Inject Amanita Muscaria";
+        displayNameProgress = "ITS GO TIME BABY";
+        medicRequired = false;
+		condition = "ace_medical_treatment_advancedMedication";
+		callbackSuccess = QFUNC(Amanita);
+        items[] = {"ldd_Amanita"};	
 	};
 };

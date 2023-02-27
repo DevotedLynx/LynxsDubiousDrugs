@@ -1,4 +1,4 @@
-#include "\x\LDD\addons\injectors\script_component.hpp"
+#include "\x\ldd\addons\injectors\script_component.hpp"
 #include "\z\ace\addons\advanced_fatigue\script_component.hpp"
 /*
 Arguments:
@@ -11,7 +11,7 @@ will increase current stamina by the percentage of max stamina
 returns nothing
 
 EXTERNAL INPUTS
-AE1 AE2 and AN _MAXRESERVE are defined numbers from ACE_ADVANCED_FATIGUE's script component
+AE1 AE2 and AN _MAXRESERVE are defined numbers from ace_ADVANCED_FATIGUE's script component
 */ 
 params ["_receiver","_percentage","_waitTime"];
 private _increaseAe1 = AE1_MAXRESERVE * _percentage;
