@@ -10,7 +10,8 @@ class CfgPatches
                 "cba_main",
                 "ace_main",
                 "ace_medical_engine",
-                "ace_medical_treatment"
+                "ace_medical_treatment",
+                "ace_medical_damage"
             };
         units[] = 
             {

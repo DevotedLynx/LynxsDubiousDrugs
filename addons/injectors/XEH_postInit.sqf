@@ -1,9 +1,5 @@
 #include "script_component.hpp"
 
-GVAR(beserkDmgTypeImmunity) = ["ropeburn","punch","stab","backblast","falling","vehiclecrash","grenade","bullet"];
-GVAR(beserk) = true;
-GVAR(tempWoundStorage) = [];
-
 [QGVAR(adrenalynTreatment), {_this call FUNC(adrenalynLocal)}] call CBA_fnc_addEventHandler;
 [QGVAR(muleTreatment), {_this call FUNC(muleLocal)}] call CBA_fnc_addEventHandler;
 [QGVAR(StaminAidTreatment), {_this call FUNC(StaminAidLocal)}] call CBA_fnc_addEventHandler;

@@ -14,23 +14,22 @@
 */
 
 params ["_percentage","_waitTime","_timeLimit","_rebound"];
-private timeLimit = _timeLimit + _waitTime;
+_timeLimit + _waitTime;
 [
 	{
-		params["_player","_percentage"];
-		ace_advanced_fatigue_anFatigue) - _percentage;
+		params["_percentage"];
+		ace_advanced_fatigue_anFatigue - _percentage;
 	},
-	[_player,_percentage],
+	[_percentage],
 	_waitTime
 ] call CBA_fnc_waitAndExecute;
 if (_rebound) then {
 	[
 		{
-			params["_player"];
-			_currentFatigue + _percentage;
+			private _currentFatigue + _percentage;
 			missionNameSpace setVariable ["ace_advanced_fatigue_AnFatigue",_currentFatigue];
 		},
-		[_player,],
-		_timelimit
+		[_percentage],
+		_timeLimit
 	] call CBA_fnc_waitAndExecute;
 };

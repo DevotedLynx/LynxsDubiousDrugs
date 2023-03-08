@@ -1,7 +1,10 @@
-class ace_Medical_Injuries {
+class ACE_Medical_Injuries {
     class damageTypes {
-        class woundHandlers {
+        class woundHandlers;
+        class bullet {
+            class woundHandlers{
             ADDON = QFUNC(customWoundHandler);
+            };
         };
     };
 };
