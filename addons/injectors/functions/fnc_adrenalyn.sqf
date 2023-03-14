@@ -21,9 +21,9 @@ if(_classname != "adrenalyn") exitwith {
 
 if (local _patient) then {
     [_medic, _patient, _bodyPart, _classname,"",_usedItem] call ace_medical_treatment_fnc_medication;
-    [QGVAR(adrenalynTreatment), [_medic, _patient, _classname]] call CBA_fnc_localEvent;
+    [QGVAR(adrenalynTreatment), [_medic, _patient, _classname,180,true]] call CBA_fnc_localEvent;
 } else {
     [_medic, _patient, _bodyPart, _classname,"",_usedItem] call ace_medical_treatment_fnc_medication;
-    [QGVAR(adrenalynTreatment), [_medic, _patient, _classname], _patient] call CBA_fnc_targetEvent;
+    [QGVAR(adrenalynTreatment), [_medic, _patient, _classname,180,true], _patient] call CBA_fnc_targetEvent;
 
 };

@@ -2,7 +2,7 @@
 /*
 * DESIGNED TO BE CALLED AFTER FILTERED TO BE CALLED LOCALLY ON THE PLAYERS SIDE
 * lowers or increases fatigue 
-* 0: percentage from 0 to 1 to increase fatgiue (negative values will recover fatigue)
+* 0: percentage from 0 to 1 to increase fatgiue (negative values will recover fatigue it seems backwards in the code trust me bro)
 * 1: waitTime how long until effects are perceived in seconds 
 * 2: time limit how long the effect will last 
 * 3: rebound if there is a time limit for the effect or if it has no rebound effect
@@ -18,7 +18,8 @@ _timeLimit + _waitTime;
 [
 	{
 		params["_percentage"];
-		ace_advanced_fatigue_anFatigue - _percentage;
+		private _currentFatigue = ace_advanced_fatigue_anFatigue;
+		ace_advanced_fatigue_anFatigue = _currentFatigue - _percentage;
 	},
 	[_percentage],
 	_waitTime
@@ -26,8 +27,9 @@ _timeLimit + _waitTime;
 if (_rebound) then {
 	[
 		{
-			private _currentFatigue + _percentage;
-			missionNameSpace setVariable ["ace_advanced_fatigue_AnFatigue",_currentFatigue];
+			params["_percentage"];
+			private _currentFatigue = ace_advanced_fatigue_anFatigue;
+			ace_advanced_fatigue_anFatigue = _currentFatigue + _percentage;
 		},
 		[_percentage],
 		_timeLimit

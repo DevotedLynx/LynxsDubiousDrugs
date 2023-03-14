@@ -12,7 +12,7 @@ Arguments:
 
 
 */ 
-params ["_medic", "_patient","_classname"];
+params ["_medic", "_patient","_classname","_effectTime","_rebound"];
 
 private _deInhibiter = [_patient,_classname];
 ace_advanced_fatigue_setAnimExclusions  pushBack _deInhibiter;
@@ -22,6 +22,8 @@ _speed = _speed + 0.25;
 _patient setVariable ["ldd_Speed", _speed, true];
 
 ["ace_common_setAnimSpeedCoef", [_patient,1]] call CBA_fnc_globalEvent;
+private _timeLimit = _effectTime *3;
+[0.3,_effectTime,_timeLimit,_rebound] call ldd_injectors_fnc_adjustAnFatigueLocal;
 [
 	{
 		params ["_patient"];
@@ -34,5 +36,5 @@ _patient setVariable ["ldd_Speed", _speed, true];
 	[
 		_patient,_classname
 	],
-	180
+	_effectTime
 ] call CBA_fnc_waitAndExecute;
