@@ -1,4 +1,4 @@
-class ACE_Medical_Treatment {
+class ace_Medical_Treatment {
 	class Medication {
 		class adrenalyn {
 			painReduce = 0;
@@ -10,7 +10,7 @@ class ACE_Medical_Treatment {
             maxDose = 3;
             incompatibleMedication[] = {};
 		};
-        class Mule {
+        class mule {
            	painReduce = 0.2;
             hrIncreaseLow[] = {15, 25};
             hrIncreaseNormal[] = {20, 35};
@@ -28,6 +28,16 @@ class ACE_Medical_Treatment {
             timeInSystem = 1800;
             timeTillMaxEffect = 30;
             maxDose = 4;
+            incompatibleMedication[] = {}; 
+        };
+        class Amanita {
+           	painReduce = 0.2;
+            hrIncreaseLow[] = {20, 100};
+            hrIncreaseNormal[] = {-5, 5};
+            hrIncreaseHigh[] = {-20, -55};
+            timeInSystem = 1800;
+            timeTillMaxEffect = 10;
+            maxDose = 1;
             incompatibleMedication[] = {}; 
         };
 	};

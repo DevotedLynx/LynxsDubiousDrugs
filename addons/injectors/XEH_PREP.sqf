@@ -1,6 +1,10 @@
 PREP(adrenalyn);
 PREP(adrenalynLocal);
-PREP(Mule);
-PREP(MuleLocal);
+PREP(mule);
+PREP(muleLocal);
 PREP(StaminAid);
 PREP(StaminAidLocal);
+PREP(adjustAnFatigueLocal);
+PREP(Amanita);
+PREP(beserkLocal);
+PREP(customWoundHandler);

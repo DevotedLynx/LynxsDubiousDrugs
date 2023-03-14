@@ -1,20 +1,23 @@
-#include "\x\astrid\addons\injectors\script_component.hpp"
+#include "\x\ldd\addons\injectors\script_component.hpp"
+/*
+
+0: the caller
+1: the receiver
+2: classname of object (in this implementation the ace medication used)
+
+handles calling for the adjustment of ace duty factor from an administered medication
+
+returns nothing
 
 
-
-
-
-
-
-
-
+*/
 params ["_medic", "_patient","_classname"];
 
-["Astrid_Mule", [_patient,0]] call CBA_fnc_localEvent;
+["ldd_mule", [_patient,0]] call CBA_fnc_localEvent;
 [
 	{
 		params ["_patient"];
-		["Astrid_Mule", [_patient,0]] call CBA_fnc_localEvent
+		["ldd_mule", [_patient,0]] call CBA_fnc_localEvent;
 	},
 	[
 		_patient,_classname

@@ -1,0 +1,14 @@
+name = "Lynx's Dubious Drugs";
+dir = "@LynxsDubiousDrugs";
+picture = "injectorIcon.paa";
+actionName = "Discord";
+action = "https://discord.com/invite/JxacecTVCP";
+logo = "injectorIcon.paa";
+logoOver = "";
+tooltip = "ldd";
+tooltipOwned = "ldd";
+overview = "a god forsaken mod";
+author = "LynxAustralis";
+overviewPicture = "injectorIcon.paa";
+overviewText = "ldd";
+overviewFootnote = "";

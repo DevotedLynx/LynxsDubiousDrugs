@@ -1,18 +1,19 @@
 #include "script_component.hpp"
 
 [QGVAR(adrenalynTreatment), {_this call FUNC(adrenalynLocal)}] call CBA_fnc_addEventHandler;
-[QGVAR(MuleTreatment), {_this call FUNC(MuleLocal)}] call CBA_fnc_addEventHandler;
+[QGVAR(muleTreatment), {_this call FUNC(muleLocal)}] call CBA_fnc_addEventHandler;
 [QGVAR(StaminAidTreatment), {_this call FUNC(StaminAidLocal)}] call CBA_fnc_addEventHandler;
+[QGVAR(AmanitaTreatment), {_this call FUNC(beserkLocal)}] call CBA_fnc_addEventHandler;
 
 ["ace_common_setAnimSpeedCoef", {
     params ["_unit", "_value"];
     if (_value == 1) then {
-    private _speed = _patient getVariable ["astrid_Speed",0];
+    private _speed = _patient getVariable ["ldd_Speed",0];
 	_unit setAnimSpeedCoef _speed+1
     }
 }] call CBA_fnc_addEventHandler;
 
-["Astrid_adrenalyn",
+["ldd_adrenalyn",
 {
 	params ["_patient"];
 	private _count_adrenalyn = {(_x select 0) == "adrenalyn"} count (_patient getVariable ["ace_medical_medications", []]);
@@ -20,10 +21,10 @@
 	1
 }] call ace_advanced_fatigue_fnc_addDutyFactor;
 
-["Astrid_Mule",
+["ldd_mule",
 {
 	params ["_patient"];
-	private _count_Mule = {(_x select 0) == "Mule"} count (_patient getVariable ["ace_medical_medications", []]);
-	if (_count_Mule > 0) exitwith {1-(0.20*_count_Mule)};
+	private _count_mule = {(_x select 0) == "mule"} count (_patient getVariable ["ace_medical_medications", []]);
+	if (_count_mule > 0) exitwith {1-(0.20*_count_mule)};
 	1
-}] call ace_advanced_fatigue_fnc_addDutyFactor
+}] call ace_advanced_fatigue_fnc_addDutyFactor;

@@ -1,12 +1,12 @@
-#include "\x\astrid\addons\main\script_component.hpp"
+#include "\x\ldd\addons\main\script_component.hpp"
 
 class CfgPatches
 {
-    class astrid_main
+    class ldd_main
     {
-        name = "Astrid's Advanced Aids";
+        name = "Lynx's Dubious Drugs";
         author = "LynxAustralis";
-        url = "https://github.com/DevotedLynx/AstridsAdvancedAids/wiki";
+        url = "https://discord.com/invite/JxacecTVCP";
         units[] = 
         {
         };
@@ -24,14 +24,14 @@ class CfgPatches
 };
 class CfgMods
 {
-    class astrid
+    class ldd
     {
-        dir="@AstridsAdvancedAids";
-		name="Astrid's Advanced Aids";
+        dir="@LynxsDubiousDrugs";
+		name="Lynx's Dubious Drugs";
 		hidePicture="true";
 		hideName="true";
 		actionName="Website";
-		action="https://github.com/DevotedLynx/AstridsAdvancedAids/wiki";
+		action="https://discord.com/invite/JxacecTVCP";
 		description="";
     };
 };

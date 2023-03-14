@@ -1,2 +1,2 @@
-_this select 0 setVariable ["astrid_Speed",0];
-_this select 0 setVariable ["Astrid_Mule",0];
+_this select 0 setVariable ["ldd_Speed",0];
+_this select 0 setVariable ["ldd_mule",0];

@@ -1,20 +1,25 @@
 class cfgVehicles
 {
     class Item_Base_F;
-    class ACE_morphineItem;
-    class astrid_adrenalynItem: ACE_morphineItem
+    class ace_morphineItem;
+    class ldd_adrenalynItem: ace_morphineItem
     {
         displayname="adrenalyn";
         author="LynxAustralis";
     };
-    class astrid_Muleitem: ACE_morphineItem
+    class ldd_muleitem: ace_morphineItem
     {
-        displayname="Mule";
+        displayname="mule";
         author="LynxAustralis";
     };
-    class astrid_StaminAidItem: ACE_morphineItem
+    class ldd_StaminAidItem: ace_morphineItem
     {
         displayName="StaminAid";
+        author="LynxAustralis";
+    };
+    class ldd_AmanitaItem: ace_morphineItem
+    {
+        displayName="Amanita Muscaria";
         author="LynxAustralis";
     };
 };
