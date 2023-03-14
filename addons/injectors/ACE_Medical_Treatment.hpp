@@ -32,9 +32,9 @@ class ace_Medical_Treatment {
         };
         class Amanita {
            	painReduce = 0.2;
-            hrIncreaseLow[] = {50, 80};
-            hrIncreaseNormal[] = {30, 55};
-            hrIncreaseHigh[] = {35, 60};
+            hrIncreaseLow[] = {20, 100};
+            hrIncreaseNormal[] = {-5, 5};
+            hrIncreaseHigh[] = {-20, -55};
             timeInSystem = 1800;
             timeTillMaxEffect = 10;
             maxDose = 1;
