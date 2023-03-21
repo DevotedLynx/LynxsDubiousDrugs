@@ -18,14 +18,16 @@ class CfgPatches
                 "ldd_adrenalynitem",
                 "ldd_muleitem",
                 "ldd_StaminAidItem",
-                "ldd_AmanitaItem"
+                "ldd_AmanitaItem",
+                "ldd_HemoDynamicItem"
             };
         weapons[] =
             {
                 "ldd_adrenalyn",
                 "ldd_mule",
                 "ldd_StaminAid",
-                "ldd_Amanita"
+                "ldd_Amanita",
+                "ldd_HemoDynamic"
             };
     };
 };

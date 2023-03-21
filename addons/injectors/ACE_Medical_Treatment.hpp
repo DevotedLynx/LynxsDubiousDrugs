@@ -40,5 +40,15 @@ class ace_Medical_Treatment {
             maxDose = 1;
             incompatibleMedication[] = {}; 
         };
+        class HemoDynamic {
+           	painReduce = 0.0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 1800;
+            timeTillMaxEffect = 10;
+            maxDose = 3;
+            incompatibleMedication[] = {}; 
+        };
 	};
 };

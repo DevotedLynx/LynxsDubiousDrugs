@@ -22,4 +22,9 @@ class cfgVehicles
         displayName="Amanita Muscaria";
         author="LynxAustralis";
     };
+    class ldd_HemoDynamic: ace_morphineItem
+    {
+        displayName="HemoDynamic Stim";
+        author="LynxAustralis";
+    };
 };

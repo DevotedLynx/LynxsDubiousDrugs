@@ -8,3 +8,5 @@ PREP(adjustAnFatigueLocal);
 PREP(Amanita);
 PREP(beserkLocal);
 PREP(customWoundHandler);
+PREP(HemoDynamic);
+PREP(HemoDynamicLocal);

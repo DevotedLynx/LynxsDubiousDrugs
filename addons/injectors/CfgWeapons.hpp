@@ -26,4 +26,10 @@ class cfgWeapons
         displayName="Amanita Muscaria";
         descriptionShort="A distilled and 'refined' version of Fly Agaric a mushroom used by vikings to induce a beserker state making the user feel invincible";
     };
+    class ldd_HemoDynamic: ace_morphine
+    {
+        author="LynxAustralis";
+        displayName="HemoDynamic Stim";
+        descriptionShort="On the cutting edge of medical science this auto injector is filled with Erythropoietin";
+    };
 };

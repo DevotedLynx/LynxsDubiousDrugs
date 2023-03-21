@@ -38,4 +38,13 @@ class ace_Medical_Treatment_Actions {
 		callbackSuccess = QFUNC(Amanita);
         items[] = {"ldd_Amanita"};	
 	};
+	class HemoDynamic: Morphine
+	{
+		displayName = "Inject HemoDynamic Stim";
+        displayNameProgress = "Injecting HemoDynamic Stim";
+        medicRequired = false;
+		condition = "ace_medical_treatment_advancedMedication";
+		callbackSuccess = QFUNC(HemoDynamic);
+        items[] = {"ldd_HemoDynamic"};	
+	};
 };
