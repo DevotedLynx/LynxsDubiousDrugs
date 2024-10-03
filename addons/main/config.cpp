@@ -2,7 +2,7 @@
 
 class CfgPatches
 {
-    class ldd_main
+    class ADDON
     {
         name = "Lynx's Dubious Drugs";
         author = "LynxAustralis";

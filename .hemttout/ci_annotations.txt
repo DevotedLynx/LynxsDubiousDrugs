@@ -1,0 +1,7 @@
+20||20||28||36||notice||`exitwith` does not match the wiki's case||non-standard command case||/addons/injectors/XEH_postInit.sqf
+28||28||23||31||notice||`exitwith` does not match the wiki's case||non-standard command case||/addons/injectors/XEH_postInit.sqf
+18||18||31||39||notice||`exitwith` does not match the wiki's case||non-standard command case||/addons/injectors/functions/fnc_StaminAid.sqf
+18||18||31||39||notice||`exitwith` does not match the wiki's case||non-standard command case||/addons/injectors/functions/fnc_adrenalyn.sqf
+18||18||29||37||notice||`exitwith` does not match the wiki's case||non-standard command case||/addons/injectors/functions/fnc_Amanita.sqf
+12||12||26||34||notice||`exitwith` does not match the wiki's case||non-standard command case||/addons/injectors/functions/fnc_MULE.sqf
+30||30||4||20||notice||`missionNameSpace` does not match the wiki's case||non-standard command case||/addons/injectors/functions/fnc_adjustAnFatigueLocal.sqf

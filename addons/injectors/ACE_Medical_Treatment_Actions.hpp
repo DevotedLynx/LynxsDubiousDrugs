@@ -6,7 +6,7 @@ class ace_Medical_Treatment_Actions {
 	{
 		displayName = "Inject adrenalyn";
         displayNameProgress = "Injecting adrenalyn";
-        medicRequired = false;
+        medicRequired = "false";
 		condition = "ace_medical_treatment_advancedMedication";
 		callbackSuccess = QFUNC(adrenalyn);
         items[] = {"ldd_adrenalyn"};
@@ -15,7 +15,7 @@ class ace_Medical_Treatment_Actions {
 	{
 		displayName = "Inject mule";
         displayNameProgress = "Injecting mule";
-        medicRequired = false;
+        medicRequired = "false";
 		condition = "ace_medical_treatment_advancedMedication";
 		callbackSuccess = QFUNC(mule);
         items[] = {"ldd_mule"};	
@@ -24,7 +24,7 @@ class ace_Medical_Treatment_Actions {
 	{
 		displayName = "Inject StaminAid";
         displayNameProgress = "Injecting StaminAid";
-        medicRequired = false;
+        medicRequired = "false";
 		condition = "ace_medical_treatment_advancedMedication";
 		callbackSuccess = QFUNC(StaminAid);
         items[] = {"ldd_StaminAid"};	
@@ -33,7 +33,7 @@ class ace_Medical_Treatment_Actions {
 	{
 		displayName = "Inject Amanita Muscaria";
         displayNameProgress = "ITS GO TIME BABY";
-        medicRequired = false;
+        medicRequired = "false";
 		condition = "ace_medical_treatment_advancedMedication";
 		callbackSuccess = QFUNC(Amanita);
         items[] = {"ldd_Amanita"};	

@@ -1,0 +1,63 @@
+2024-10-03T00:34:32.016163Z TRACE ThreadId(01) version: 1.13.0
+2024-10-03T00:34:32.016228Z TRACE ThreadId(01) platform: windows
+2024-10-03T00:34:32.016238Z TRACE ThreadId(01) args: [
+    ".\\hemtt.exe",
+    "check",
+]
+2024-10-03T00:34:32.016622Z TRACE ThreadId(01) using temporary folder: "C:\\Users\\VALKYR~1\\AppData\\Local\\Temp\\hemtt\\ldd"
+2024-10-03T00:34:32.016631Z TRACE ThreadId(01) using project folder: "P:\\ldd"
+2024-10-03T00:34:32.016635Z TRACE ThreadId(01) using out folder: "P:\\ldd\\.hemttout"
+2024-10-03T00:34:32.016851Z TRACE ThreadId(01) using build folder: "P:\\ldd\\.hemttout\\check"
+2024-10-03T00:34:32.021627Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/main/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "P:\\ldd\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\VALKYR~1\\AppData\\Local\\Temp\\hemtt\\ldd\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "P:\\ldd" } } } } } }] } } }
+2024-10-03T00:34:32.021923Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/main/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "P:\\ldd\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\VALKYR~1\\AppData\\Local\\Temp\\hemtt\\ldd\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "P:\\ldd" } } } } } }] } } }
+2024-10-03T00:34:32.022942Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/injectors/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "P:\\ldd\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\VALKYR~1\\AppData\\Local\\Temp\\hemtt\\ldd\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "P:\\ldd" } } } } } }] } } }
+2024-10-03T00:34:32.023213Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/injectors/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "P:\\ldd\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\VALKYR~1\\AppData\\Local\\Temp\\hemtt\\ldd\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "P:\\ldd" } } } } } }] } } }
+2024-10-03T00:34:32.036339Z TRACE ThreadId(01) checking for version macro in VfsPath { path: "/addons/main/script_version.hpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "P:\\ldd\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\VALKYR~1\\AppData\\Local\\Temp\\hemtt\\ldd\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "P:\\ldd" } } } } } }] } } }
+2024-10-03T00:34:32.042059Z  INFO ThreadId(01) Config loaded for Lynx's Dubious Drugs 0.0.1.8
+2024-10-03T00:34:32.042145Z TRACE ThreadId(01) Scanning P:\ldd\addons for addons
+2024-10-03T00:34:32.042952Z  INFO ThreadId(01) Running checks
+2024-10-03T00:34:32.042985Z TRACE ThreadId(01) phase: init (Hooks) (start)
+2024-10-03T00:34:32.043042Z TRACE ThreadId(01) no hooks folder
+2024-10-03T00:34:32.043052Z TRACE ThreadId(01) phase: init (Hooks) (done)
+2024-10-03T00:34:32.043055Z TRACE ThreadId(01) phase: init (Rapifier) (start)
+2024-10-03T00:34:32.043059Z TRACE ThreadId(01) phase: init (Rapifier) (done)
+2024-10-03T00:34:32.043063Z TRACE ThreadId(01) phase: init (SQF) (start)
+2024-10-03T00:34:32.391176Z TRACE ThreadId(01) phase: init (SQF) (done)
+2024-10-03T00:34:32.391192Z TRACE ThreadId(01) phase: init (Binarize) (start)
+2024-10-03T00:34:32.391200Z TRACE ThreadId(01) Using Binarize path from registry
+2024-10-03T00:34:32.391267Z TRACE ThreadId(01) phase: init (Binarize) (done)
+2024-10-03T00:34:32.391273Z TRACE ThreadId(01) phase: check (Hooks) (start)
+2024-10-03T00:34:32.391276Z TRACE ThreadId(01) phase: check (Hooks) (done)
+2024-10-03T00:34:32.391279Z TRACE ThreadId(01) phase: check (Rapifier) (start)
+2024-10-03T00:34:32.391317Z TRACE ThreadId(01) phase: check (Rapifier) (done)
+2024-10-03T00:34:32.391320Z TRACE ThreadId(01) phase: check (SQF) (start)
+2024-10-03T00:34:32.391349Z TRACE ThreadId(01) phase: check (SQF) (done)
+2024-10-03T00:34:32.391353Z TRACE ThreadId(01) phase: check (Binarize) (start)
+2024-10-03T00:34:32.397655Z  INFO ThreadId(01) Validated 0 files for binarization
+2024-10-03T00:34:32.397663Z TRACE ThreadId(01) phase: check (Binarize) (done)
+2024-10-03T00:34:32.397666Z TRACE ThreadId(01) phase: pre_build (Hooks) (start)
+2024-10-03T00:34:32.397673Z TRACE ThreadId(01) phase: pre_build (Hooks) (done)
+2024-10-03T00:34:32.397676Z TRACE ThreadId(01) phase: pre_build (Rapifier) (start)
+2024-10-03T00:34:32.430371Z  INFO ThreadId(01) Rapified 2 addon configs
+2024-10-03T00:34:32.430396Z TRACE ThreadId(01) phase: pre_build (Rapifier) (done)
+2024-10-03T00:34:32.430401Z TRACE ThreadId(01) phase: pre_build (SQF) (start)
+2024-10-03T00:34:32.439375Z TRACE ThreadId(02) sqf compiling /addons/injectors/XEH_preInit.sqf
+2024-10-03T00:34:32.439436Z TRACE ThreadId(10) sqf compiling /addons/injectors/functions/fnc_StaminAid.sqf
+2024-10-03T00:34:32.439431Z TRACE ThreadId(09) sqf compiling /addons/injectors/functions/fnc_MULELocal.sqf
+2024-10-03T00:34:32.439427Z TRACE ThreadId(08) sqf compiling /addons/injectors/functions/fnc_adrenalyn.sqf
+2024-10-03T00:34:32.439411Z TRACE ThreadId(12) sqf compiling /addons/injectors/XEH_Extinit.sqf
+2024-10-03T00:34:32.439400Z TRACE ThreadId(06) sqf compiling /addons/injectors/functions/fnc_StaminAidLocal.sqf
+2024-10-03T00:34:32.439400Z TRACE ThreadId(05) sqf compiling /addons/injectors/XEH_preStart.sqf
+2024-10-03T00:34:32.439403Z TRACE ThreadId(04) sqf compiling /addons/injectors/XEH_postInit.sqf
+2024-10-03T00:34:32.439435Z TRACE ThreadId(13) sqf compiling /addons/injectors/functions/fnc_beserkLocal.sqf
+2024-10-03T00:34:32.439440Z TRACE ThreadId(11) sqf compiling /addons/injectors/functions/fnc_MULE.sqf
+2024-10-03T00:34:32.439438Z TRACE ThreadId(14) sqf compiling /addons/injectors/functions/fnc_adjustAnFatigueLocal.sqf
+2024-10-03T00:34:32.439435Z TRACE ThreadId(18) sqf compiling /addons/injectors/functions/fnc_Amanita.sqf
+2024-10-03T00:34:32.439435Z TRACE ThreadId(03) sqf compiling /addons/injectors/functions/fnc_customWoundHandler.sqf
+2024-10-03T00:34:32.439449Z TRACE ThreadId(07) sqf compiling /addons/injectors/functions/fnc_adrenalynLocal.sqf
+2024-10-03T00:34:32.494084Z  INFO ThreadId(01) Validated 14 sqf files
+2024-10-03T00:34:32.494122Z TRACE ThreadId(01) phase: pre_build (SQF) (done)
+2024-10-03T00:34:32.494127Z TRACE ThreadId(01) phase: pre_build (Binarize) (start)
+2024-10-03T00:34:32.494138Z TRACE ThreadId(01) phase: pre_build (Binarize) (done)
+2024-10-03T00:34:32.513926Z TRACE ThreadId(01) writing ci annotations to .hemttout/ci_annotations.txt
+2024-10-03T00:34:32.522366Z TRACE ThreadId(01) wrote 315 ci annotations to .hemttout/ci_annotations.txt
